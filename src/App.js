@@ -65,7 +65,7 @@ const App = ({openSidebar, openSearchbar, openCartSidebar})  => {
             <Routes>
               <Route path='/' element= { <HomePage /> }> </Route>
               <Route path='/login' element= { <LoginPage /> }> </Route>
-              <Route path='/custompage' element = { <CustomPage />}> </Route>
+              <Route path='/custom' element = { <CustomPage />}> </Route>
               <Route path='/contact' element = { <ContactPage />}> </Route>
               <Route path='/graphic' element = { <GraphicTeesPage/>}> </Route>
             </Routes>

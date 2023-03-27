@@ -1,7 +1,7 @@
 import React,  {Link} from 'react'
 import "../components/CustomPage.css" 
-
 import CustomHero from "../components/CustomHero"
+
 import customT from "../assets/customT.png"
 import customHoodie from "../assets/custom-hoodie.png"
 import customWindbreaker from "../assets/custom-windbreaker.png"
@@ -13,7 +13,7 @@ function CustomPage() {
   return (
     <div className='CustomPage'>
         <CustomHero />
-        
+
         <main>
             <p className='custom-shirtsp'>
                 Custom Shirts are shipping out withing 1-2 business days (weekends are not included.) 
@@ -24,13 +24,11 @@ function CustomPage() {
             </p>
 
             <section className="clothing-options">
-                <Link to='/custompage'>
                     <div>
                         <img src={customT} alt="" className='clothing-imgs'/>
                         <p className='h2-title'>CUSTOM T-SHIRT</p>
                         <p className='price-text'>from $25.00</p>
                     </div>
-                </Link>
 
 
                 <div>
