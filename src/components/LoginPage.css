@@ -1,0 +1,74 @@
+*{
+    padding: none;
+    margin: none;
+}
+
+.login{
+    display: grid;
+    place-items: center;
+    height: 700px;
+    padding: 2rem;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    height: 575px;
+    width: 400px;
+}
+
+.login form > h1{
+    text-align: left;
+    padding-bottom: 3rem;
+    font-size: 38px;
+}
+
+.login form label{
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 0.5rem;
+
+}
+
+.login form input{
+    height: 45px;
+    border: 1px lightgray solid;
+}
+
+
+.login .forgot-password-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.login #forgot-password-label{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.login #submit{
+    padding: 1em;
+    background-color: black;
+    border: 1px white solid;
+    color: white;
+    cursor: pointer;
+}
+
+.login p{
+    text-align: left;
+    padding-top: 3rem;
+    font-size: 18px;
+}
+
+.login a{
+    text-decoration: none;
+}
+
+@media (max-width: 450px){
+    .login form{
+        width: 250px;
+    }
+}

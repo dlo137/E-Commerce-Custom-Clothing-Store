@@ -1,0 +1,103 @@
+*{
+    padding: none;
+    margin: 0;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    height: 1300px;
+}
+
+.Contact main {
+    width: 1250px;
+    text-align: left;
+    padding: 4rem 11rem;
+}
+
+.Contact h1{
+    font-size: 40px;
+}
+
+.Contact .contactUs-h1{
+    padding-bottom: 2.5rem;
+}
+
+.Contact .contact-us-text{
+    font-weight: bold;
+    font-size: 34px;
+    padding-bottom: 2.5rem;
+
+}
+
+.Contact .contact-us-copypaste{
+    font-size: 22px;
+}
+
+.Contact ul{
+    padding-left: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+.Contact li{
+    padding-bottom: .5rem;
+}
+
+
+.Contact .red-text-warning{
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.Contact label[for="name"], label[for="email"] {
+    padding: 0 0 1rem 0;
+    font-weight: bold;
+}
+
+
+.Contact label[for="message"]{
+    padding: 1rem 0 ;
+    font-weight: bold;
+}
+
+.Contact .name-and-email-section{
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 3rem;
+    
+}
+
+.Contact .name-container, .email-container, .message-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.Contact #contact-email, #contact-name{
+    display: flex;
+    height: 45px;
+    border: 1px solid lightgray;
+}
+
+.Contact #contact-message{
+    height: 285px;
+}
+
+.Contact .message-container{
+    padding-bottom: 2rem;
+}
+
+
+.Contact #contact-submit-btn{
+    padding: .75rem ;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 90px;
+}

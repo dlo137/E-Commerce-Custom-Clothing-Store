@@ -1,0 +1,42 @@
+
+
+.CustomPage main{
+    height: 650px;
+    padding: 4rem 21.5rem;
+}
+
+.CustomPage main > p {
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+}
+
+.CustomPage .custom-shirtsp{
+    padding-bottom: 2rem;
+}
+
+.CustomPage .email-link{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.CustomPage .clothing-options{
+    display: flex;
+    padding-top: 2rem;
+    gap: 3rem;
+    text-align: left;
+}
+
+.CustomPage .h2-title{
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-size: 22px;
+}
+
+.CustomPage .price-text{
+    font-size: 18px;
+}
+
+.CustomPage .clothing-imgs{
+    width: 215px;
+}

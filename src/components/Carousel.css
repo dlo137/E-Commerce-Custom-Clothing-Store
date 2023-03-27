@@ -1,0 +1,68 @@
+.carousel {
+    background: linear-gradient(to top, rgb(51, 51, 51) 0%, transparent 50%), url("../assets/shirt-mockups.png");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+
+    position: relative;
+}
+
+.carousel .carousel-text{
+    position: absolute;
+    bottom: 14%;
+    left: 18.5%;
+    text-align: left;
+}
+
+.carousel h1{
+    color: white;
+    font-size: 62px;
+}
+
+.carousel button{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: .4rem;
+    border: 2px white solid;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100px;
+    transition: width 0.5s ease;
+    position: relative;
+
+}
+
+.carousel button:hover{
+    width: 150px;
+}
+
+/* ====================== Media Queries ====================== */
+
+@media only screen and (max-width: 768px) {
+    .carousel .carousel-text{
+        bottom: 14%;
+        left: 6%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .carousel {
+        height: 248px;
+    }
+    
+    .carousel h1{
+        font-size: 32px;
+    }
+
+    .carousel button{
+        font-size: 14px;
+    }
+
+    .carousel .carousel-text{
+        bottom: 14%;
+        left: 6%;
+    }
+}

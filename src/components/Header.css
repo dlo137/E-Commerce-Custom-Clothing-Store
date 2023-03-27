@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ====================== Header Styling====================== */
+
+.header {
+    height: 240px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.header .nation-wide-shipping-banner{
+    z-index: 999;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header nav{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 1rem;
+
+}
+
+.header .hamburger-icon, .logo, .links > img{
+    cursor: pointer;
+}
+
+
+.header .hamburger-icon > img{
+    height: 38px;
+    width: auto;
+    margin-left: -3rem;
+}
+
+/* ====================== Pop-Out Sidebar ====================== */
+
+.sidebar{
+    z-index: 999;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    padding: 0rem 2.5rem;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+}
+
+.sidebar--open{
+    transform: translateX(0%);
+}
+
+.backdrop{
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.backdrop--open{
+    display: block;
+}
+/* =========== Sidebar Content ============ */
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    text-align: left;
+    gap: 1rem;
+    font-size: 26px;
+    padding-top: 1rem;
+}
+
+.sidebar ul > li{
+    border-top: solid lightgray 1px;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.close-icon-container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.5rem 0rem;
+}
+
+.close-icon-container > img{
+    cursor: pointer;
+}
+
+/* =========== Popout Cart Sidebar ============ */
+
+
+
+.cartsidebar{
+    z-index: 999;
+    position: fixed;
+    background-color: white;
+    color: black;
+    top: 0;
+    right: -325px;
+    height: 100vh;
+    padding: .5rem 2.5rem;
+    transition: all 0.4s ;
+    overflow-x: hidden;
+
+}
+
+.cartsidebar--open {
+    top: 0;
+    right: 0;
+}
+
+
+.cartsidebar header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: .5rem;
+
+    border-bottom: 1px lightgray solid;
+}
+
+.cartsidebar header > h1{
+    font-size: 28px;
+}
+
+.cartsidebar ul > li{
+    list-style: none;
+    padding-top: 1.5rem;
+    font-size: 18px;
+    text-align: left;
+}
+
+
+/* ====================== Pop-Out Searchbar ====================== */
+
+.searchbar{
+    z-index: 999;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 0;
+    height: 240px;
+    width: 99.1vw;
+    transform: translateY(-100%);
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchbar--open{
+    transform: translateY(0%);
+}
+
+
+.searchbar > #nation-wide-banner {
+    z-index: 999;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar .close-icon-container > img{
+    cursor: pointer;
+}
+
+
+.searchbar > .search-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+}
+
+
+.searchbar #search-input{
+    width: 70vw;
+    font-size: 22px;
+    border: none;
+}
+
+.Links{
+    text-decoration: none;
+}
+
+
+
+
+/* ====================== Media Queries ====================== */
+
+@media only screen and (max-width: 768px) {
+
+    .header{
+        height: 240px;
+    }
+
+    .header .nation-wide-shipping-banner{
+        color: white;
+        padding: 0.5rem;
+        font-size: 16px;
+        
+    }
+
+    /* ========= Navigation ========== */
+    
+    .header .menu-icon > img{
+       padding-right: 4rem;
+    }
+
+    .header .logo > img{
+        width: auto;
+        height: 178px;
+    }
+
+    .header .first-link{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    .header{
+        height: 162px;
+    }
+
+    .header .nation-wide-shipping-banner{
+        font-size: 14px;
+    }
+
+    .header .menu-icon > img{
+       padding-right: 3rem;
+    }
+
+    .header .logo > img{
+        width: auto;
+        height: 94px;
+    }
+
+    .header .first-link{
+        display: none;
+    }
+
+
+}

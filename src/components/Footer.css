@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Footer{
+    background-color: black;
+    color: white;
+    height: 345px;
+}
+
+.Footer .footer-wrapper{
+    display: flex;
+    padding: 5rem 21.5rem;    
+    gap: 3rem;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.Footer .footer-wrapper > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.Footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.Footer li{
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.Footer .sign-up-section{
+    padding-left: 3rem;
+}
+
+.Footer .sign-up-section > p {
+    padding-bottom: 1.5rem;
+}
+
+#email{
+    padding: 0.6em;
+    background-color: black;
+    border: 1px white solid;
+    color: white;
+}
+
+input[type="email"]::placeholder {
+    color: white;
+  }
+
+#submit{
+    padding: 0.6em;
+    background-color: white;
+    border: 1px white solid;
+    color: black;
+    cursor: pointer;
+}
+
+.Footer form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Footer .Links{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/* ====================== Media Queries ====================== */
+
+  @media (max-width: 1150px) {
+
+    .Footer .footer-wrapper{
+        padding: 3.6rem 3.0rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .Footer {
+        height: auto;
+        text-align: center;
+    }
+
+    .Footer .footer-wrapper > .sign-up-section{
+        display: none;
+    }
+
+    .Footer .sign-up-section > h1, .p,  .labels{
+        display: none ;
+    }
+
+  }

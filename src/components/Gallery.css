@@ -1,0 +1,194 @@
+/* =================== Gallery Wrapper ===================*/
+.Gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 875px;
+    width: auto;  
+}
+
+#title{
+    display: flex;
+    width: 1215px;
+
+}
+
+
+/* =================== Grid Stlying ===================*/
+
+.Gallery .grid{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    padding: 3rem 0rem;
+
+    width: auto;
+    height: auto;
+}
+
+.Gallery .grid-div{
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(0, 0, 0);
+    width: 18.5rem;
+    height: 18.5rem; 
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    transition: 0.3s ease-in;
+}
+
+.grid-div:hover{
+    cursor: pointer;
+    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+
+}
+
+/* =================== Grid-Text ===================*/
+
+.grid-div > h1{
+    text-align: left;
+    color: white;
+
+    transition: all 0.5s ease;
+    transform-origin: left;
+}
+
+.grid-div > h1:hover{
+    border-bottom: 1px solid white;
+
+
+}
+/* =================== Grid Images ===================*/
+#div-img-1{
+    background-image: linear-gradient(to top, rgb(51, 51, 51) 0%, transparent 60%), url('../assets/black-shirt.png');
+
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease;
+}
+
+
+#div-img-2{
+    background-image: linear-gradient(to top, rgb(51, 51, 51) 0%, transparent 60%), url('../assets/HurtsImg.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+#div-img-3{
+    background-image: linear-gradient(to top, rgb(51, 51, 51) 0%, transparent 60%), url('../assets/goated-shirt.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+#div-img-4{
+    background-image: linear-gradient(to top, rgb(51, 51, 51) 0%, transparent 60%), url(../assets/hurts.png);
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+#div-img-5{
+    background-image: linear-gradient(to top, rgb(51, 51, 51) 0%, transparent 60%), url('../assets/miss-valentine-shirt.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+#div-img-6{
+    background-image: linear-gradient(to top, rgb(51, 51, 51) 0%, transparent 60%), url('../assets/best-teacher-outfit.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+#div-img-7{
+    background-image: linear-gradient(to top, rgb(51, 51, 51) 0%, transparent 60%), url('../assets/anti-social-shirt.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+#div-img-8{
+    background-image: linear-gradient(to top, rgb(51, 51, 51) 0%, transparent 60%), url('../assets/dad-shirt.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.Links{
+    text-decoration: none;
+}
+@media (max-width: 1240px) {
+
+    #title{
+        display: flex;
+        width: 990px;
+    
+    }
+    
+    .grid-div{
+        background-color: rgb(221, 163, 163);
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .grid-div > img{
+        border: 1px red solid;
+        width: 15rem;
+        height: 15rem;
+    }
+  }
+
+@media (max-width: 1050px) {
+
+    #title{
+        display: flex;
+        width: 600px;
+        justify-content: center;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem 0rem; 
+    }
+    
+    .grid-div{
+        background-color: rgb(221, 163, 163);
+        width: 15rem;
+        height: 11rem;
+    }
+
+    .grid-div > img{
+        border: 1px red solid;
+        width: 15rem;
+        height: 11rem;
+    }
+}
+
+@media (max-width: 615px) {
+
+    #title{
+        display: flex;
+        width: 300px;
+        justify-content: center;
+    }
+
+    .grid-div{
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .grid-div > img{
+        border: 1px red solid;
+        width: 11rem;
+        height: 11rem;
+    }
+}
+
+
+  
+
